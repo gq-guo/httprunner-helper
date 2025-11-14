@@ -6,7 +6,7 @@
   "publisher": "httprunner",
   "repository": {
     "type": "git",
-    "url": "https://github.com/httprunner/httprunner-helper"
+    "url": "https://github.com/gq-guo/httprunner-helper"
   },
   "keywords": [
     "httprunner",

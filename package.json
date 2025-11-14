@@ -1,0 +1,49 @@
+{
+  "name": "httprunner-helper",
+  "displayName": "HttpRunner Helper",
+  "description": "便捷地编辑 httprunner 的测试用例，提供路径补全和函数补全功能",
+  "version": "0.0.1",
+  "publisher": "httprunner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/httprunner/httprunner-helper"
+  },
+  "keywords": [
+    "httprunner",
+    "testing",
+    "yaml",
+    "autocomplete",
+    "path completion",
+    "function completion"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.x",
+    "@typescript-eslint/parser": "^6.x",
+    "eslint": "^8.x",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {}
+}

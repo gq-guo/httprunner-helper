@@ -1,0 +1,10 @@
+name: user login
+request:
+  url: /api/user/login
+  method: POST
+  json:
+    username: $username
+    password: $password
+validate:
+  - eq: [status_code, 200]
+  - eq: [body.code, 0]

@@ -1,0 +1,22 @@
+config:
+  name: test login success
+  variables:
+    data_file: data/
+    username: admin
+    password: admin123
+  base_url: http://localhost:8000
+
+teststeps:
+  - name: login with valid credentials
+    api: 
+    testcase: apis/user copy/login copy.yaml
+    new: apis/user/login.yaml
+    b: apis/base.yaml
+    t:  apis/user/login.yaml
+    ttt: data/data1.json
+    pr: ${get_token()}
+
+    variables:
+      username: $username
+      password: $password
+      token: # 在此处输入 $ 测试函数补全

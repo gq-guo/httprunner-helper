@@ -1,0 +1,5 @@
+name: base api
+request:
+  base_url: http://localhost:8000
+  headers:
+    Content-Type: application/json
